@@ -14,32 +14,65 @@
 </script>
 <link rel="stylesheet" href="style.css">
 <script>
-  function nightDayHandler(self){
+function nightDayHandler(self){
   var target = document.querySelector('body');
+  /*var a, b, c,d;
+
+  if (self.value==='night'){
+    a = "black";
+    b = "white";
+    c = "day";
+    d = "powderblue";
+  } else {
+    a = "white";
+    b = "black";
+    c = "night";
+    d = "blue";
+  }
+
+    target.style.backgroundColor = a;
+    target.style.color = b;
+    self.value =c;
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+        alist[i].style.color = d;
+        i = i + 1;
+    }*/
+
   if (self.value==='night'){
     target.style.backgroundColor = 'black';
     target.style.color = 'white';
     self.value ='day';
 
     var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-    alist[i].style.color = 'powderblue';
-    i = i + 1;
-}
-} else{
+    var i = 0;
+    while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+    }
+  } 
+  else{
     target.style.backgroundColor = 'white';
     target.style.color = 'black';
     self.value='night';
 
     var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-    alist[i].style.color = 'blue';
-    i = i + 1;
-}
-}
+    var i = 0;
+    while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+    }
   }
+
+
+
+
+}
+
+
+
 </script>
 </head>
 <body>
@@ -47,9 +80,7 @@ while(i < alist.length){
 
 
 
-<input type="button" value="night" onclick="
-nightDayHandler(this);
-">
+<input type="button" value="night" onclick="nightDayHandler(this);">
   <div id="grid">
 <ol>
   <li><a href="1.html"> HTML</a></li>
