@@ -3,85 +3,25 @@
 <head>
 <title>WEB1 - JavaScript</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/ecmascript" src="http://bluecherry.co.kr/Script/jquery-1.7.1.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7W41RS83PT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+  
   gtag('config', 'G-7W41RS83PT');
 </script>
 <link rel="stylesheet" href="style.css">
-<script>
-function nightDayHandler(self){
-  var target = document.querySelector('body');
-  /*var a, b, c,d;
-
-  if (self.value==='night'){
-    a = "black";
-    b = "white";
-    c = "day";
-    d = "powderblue";
-  } else {
-    a = "white";
-    b = "black";
-    c = "night";
-    d = "blue";
-  }
-
-    target.style.backgroundColor = a;
-    target.style.color = b;
-    self.value =c;
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color = d;
-        i = i + 1;
-    }*/
-
-  if (self.value==='night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    self.value ='day';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color = 'powderblue';
-        i = i + 1;
-    }
-  } 
-  else{
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    self.value='night';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color = 'blue';
-        i = i + 1;
-    }
-  }
-
-
-
-
-}
-
-
-
-</script>
+<script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
 
-
-
 <input type="button" value="night" onclick="nightDayHandler(this);">
-  <div id="grid">
+  
+<div id="grid">
 <ol>
   <li><a href="1.html"> HTML</a></li>
   <li><a href="2.html"> CSS</a></li>
@@ -142,6 +82,31 @@ function setColor(pObj, pText, pBack) {
   s0.parentNode.insertBefore(s1,s0);
   })();
   </script>
-  <!--End of Tawk.to Script-->
+  <!--End of Tawk.to Scriptc
+  <!-- var a, b, c,d;
+
+  if (self.value==='night'){
+    a = "black";
+    b = "white";
+    c = "day";
+    d = "powderblue";
+  } else {
+    a = "white";
+    b = "black";
+    c = "night";
+    d = "blue";
+  }
+
+    target.style.backgroundColor = a;
+    target.style.color = b;
+    self.value =c;
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+        alist[i].style.color = d;
+        i = i + 1;
+    }  */-->
+
 </body>
 </html>
